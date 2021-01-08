@@ -1,0 +1,1329 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1.h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 25px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf') format('truetype'),
+        url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/Lato/Lato-Black.eot');
+    src: url('../fonts/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Black.woff2') format('woff2'),
+        url('../fonts/Lato/Lato-Black.woff') format('woff'),
+        url('../fonts/Lato/Lato-Black.ttf') format('truetype'),
+        url('../fonts/Lato/Lato-Black.svg#Lato-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Medium.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat/Montserrat-Bold.eot');
+    src: url('../fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/Montserrat/Montserrat-Black.eot');
+    src: url('../fonts/Montserrat/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Black.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Black.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Black.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Black.svg#Montserrat-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+/* =============================================
+			  Start Heading Section                 
+================================================= */
+.header-section{
+	width: 100%;
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px 0px 100px 0px;
+}
+.header-section .header{
+	width: 100%;
+}
+.header-section .header .header-logo{
+	width:20%;
+	float: left;
+}
+.header-section .header .header-menu{
+	width:70%;
+	float: left;
+}
+.header-section .header .header-menu ul{
+	text-align: right;
+}
+.header-section .header .header-menu ul li{
+	display: inline;
+}
+.header-section .header .header-menu ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: 'Montserrat-Regular';
+	font-size: 15px;
+	font-weight: 400;
+	padding: 0px 20px;
+	color: #fff;
+}
+.header-section .header .header-menu ul li a:hover{
+	color: #333333;
+}
+.header-section .header .header-icon{
+	width:10%;
+	float: left;
+}
+.header-section .header .header-icon li{
+	display: inline-block;
+}
+.header-section .header .header-icon i{
+	font-size: 15px;
+	padding: 0px 15px;
+	color: #fff;
+}
+/* banner */
+.header-section .banner{
+	width: 100%;
+	text-align: center;
+}
+.header-section .banner h3{
+	font-size: 40px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 70px;
+}
+.header-section .banner h1{
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 70px;
+	color: #fff;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	position: relative;
+}
+.header-section .banner h1::after{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 4px;
+	background: #fff;
+	top: 165px;
+	left: 515px;
+}
+.header-section .banner .banner-btn{
+	margin-top: 70px;
+}
+.header-section .banner .banner-btn a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Montserrat-Bold';
+	padding: 10px 30px;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.header-section .banner .banner-btn a:hover{
+	background: #fff;
+	color: #333333;
+	border: 1px solid transparent;
+}
+/* barfiller */
+.section-counter{
+	width: 100%;
+	margin-top: 90px;
+}
+.section-counter p{
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Montserrat-Bold';
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+.barfiller {
+	width: 22%;
+	margin-right: 3%;
+	float: left;
+    height: 5px;
+    background: #fcfcfc;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5);
+  }
+  
+  .barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+  }
+  
+  .barfiller .tipWrap { display: none; }
+  
+  .barfiller .tip {
+    margin-top: -30px;
+    padding: 2px 4px;
+    font-size: 11px;
+    color: #fff;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+    background: #08c;
+  }
+  
+  .barfiller .tip:after {
+    border: solid;
+    border-color: rgba(0,0,0,.8) transparent;
+    border-width: 6px 6px 0 6px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 9px;
+    top: 100%;
+    z-index: 9
+  }
+
+/* =============================================
+			  End Heading Section                 
+================================================= */
+
+/* =============================================
+			  Start about-section                 
+================================================= */
+.about-section{
+	width: 100%;
+}
+.about-section .about{
+	width: 100%;
+}
+.about-section .about .about-title{
+	width: 100%;
+	text-align: center;
+}
+.about-section .about .about-title h4{
+	font-size: 30px;
+	font-weight: 400;
+	color: #333333;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 70px;
+}
+.about-section .about .about-title h3{
+	font-size: 40px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	position: relative;
+}
+.about-section .about .about-title h3::after{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 3px;
+	background: #f38181;
+	top: 60px;
+	left: 515px;
+}
+.about-section .about .about-title p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.about-section .about .about-inner{
+	width: 33.33%;
+	float: left;
+	position: relative;
+	margin-bottom: 70px;
+}
+.about-section .about .about-inner img{
+	width: 100%;
+}
+.about-section .about .about-inner .hover-box{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #e9d282 0%,  #e37d7c);
+	top: 0px;
+	left: 0px;
+	transition: 0.4s linear;
+	text-align: center;
+	opacity: 0;
+}
+.about-section .about .about-inner .hover-box ul{
+	padding-left: 0;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.about-section .about .about-inner .hover-box:hover{
+	opacity:0.8;
+}
+.about-section .about .about-inner .hover-box i{
+	font-size: 20px;
+	color: #fff;
+}
+.about-section .about .about-inner .hover-box h6{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: ;
+	color: #fff;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+/* =============================================
+			  End about-section                 
+================================================= */
+
+/* =============================================
+			 Start number-section                
+================================================= */
+.number-section{
+    width: 100%;
+    background: #95e1d3;
+    padding: 50px 0px;
+}
+.number-section .number{
+    width: 100%;
+    margin: 0 auto;
+}
+.number-section .number .number-inner{
+    width: 20%;
+    float: left;
+	text-align: center;
+	border-left: 1px solid #fff;
+}
+.number-section .number .number-inner:last-child{
+	border-right: 1px solid #fff;
+}
+.number-section .number .number-inner .counter-wrapper{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat-Regular';
+    color: #fff;
+}
+.number-section .number .number-inner h4{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Montserrat-Regular';
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: -10px;
+}
+
+/* =============================================
+			 End number-section                
+================================================= */
+/* =============================================
+			  Start Amazing-section                 
+================================================= */
+.amazing-section{
+	width: 100%;
+}
+.amazing-section .amazing{
+	width: 100%;
+}
+.amazing-section .amazing .amazing-title{
+	width: 100%;
+	text-align: center;
+}
+.amazing-section .amazing .amazing-title h4{
+	font-size: 30px;
+	font-weight: 400;
+	color: #333333;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 70px;
+}
+.amazing-section .amazing .amazing-title h3{
+	font-size: 40px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	position: relative;
+}
+.amazing-section .amazing .amazing-title h3::after{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 3px;
+	background: #f38181;
+	top: 60px;
+	left: 515px;
+}
+/* amazing inner */
+.amazing-border{
+	border-bottom: 2px solid #999999;
+}
+.amazing-inner{
+	width: 33.33%;
+	float: left;
+	margin-top:70px;
+	padding-bottom: 50px;
+}
+
+.amazing-inner img{
+	width: 8%;
+}
+.amazing-inner .media-body{
+	margin-left: 20px;
+}
+.amazing-inner h6{
+    font-size: 15px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+}
+.amazing-inner p{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+}
+/* =============================================
+			  End Amazing-section                 
+================================================= */
+
+/* =============================================
+			  Start Uniqe-section                 
+================================================= */
+.uniqe-section{
+	width: 100%;
+	background-image: url(../images/uniqe-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 70px 0px 500px 0px;
+}
+.uniqe-section .uniqe{
+	width: 100%;
+}
+.uniqe-section .uniqe .uniqe-title{
+	width: 100%;
+	text-align: center;
+}
+.uniqe-section .uniqe .uniqe-title h4{
+	font-size: 30px;
+	font-weight: 400;
+	color: #333333;
+	font-family: 'Kaushan Script', cursive;
+}
+.uniqe-section .uniqe .uniqe-title h3{
+	font-size: 40px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	position: relative;
+}
+.uniqe-section .uniqe .uniqe-title h3::after{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 3px;
+	background: #f38181;
+	top: 60px;
+	left: 515px;
+}
+/* =============================================
+			  Start Uniqe-section                 
+================================================= */
+
+/* =============================================
+			  Start what-section                 
+================================================= */
+.what-section{
+	width: 100%;
+	padding-bottom: 70px;
+}
+.what-section .what{
+	width: 100%;
+}
+.what-section .what .what-title{
+	width: 100%;
+	text-align: center;
+}
+.what-section .what .what-title h4{
+	font-size: 30px;
+	font-weight: 400;
+	color: #333333;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 70px;
+}
+.what-section .what .what-title h3{
+	font-size: 40px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	position: relative;
+}
+.what-section .what .what-title h3::after{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 3px;
+	background: #f38181;
+	top: 60px;
+	left: 515px;
+}
+.what-section .what .what-title p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.what-section .what .what-inner-left{
+	width: 45%;
+	margin-right: 10%;
+	float: left;
+}
+.what-section .what .what-inner-left img{
+	width: 100%;
+}
+.what-section .what .what-inner-right{
+	width: 45%;
+	float: left;
+}
+.what-section .what .what-inner-right .list-group{
+	margin-top: 60px;
+}
+/* =============================================
+			  End what-section                 
+================================================= */
+
+/* =============================================
+			  Start clients-section                 
+================================================= */
+.Client-section{
+	width: 100%;
+	background: #f8f8f8;
+	padding: 60px 0px;
+}
+.Client-section .carousel{
+	width: 80%;
+	margin: 0 auto;
+}
+.Client-section .carousel .media {
+	margin-left: 120px;
+}
+.Client-section .carousel .media .media-body{
+	margin-left: 30px;
+}
+.Client-section .carousel .media i{
+	width: 100px;
+	height: 100px;
+	line-height:100px;
+	border: 1px solid #95e1d3;
+	text-align: center;
+	color: #95e1d3;
+	font-size: 50px;
+}
+.carousel-item p{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+}
+.carousel-item h6{
+    font-size: 15px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: -15px;
+	position: relative;
+	margin-left: 70px;
+}
+.carousel-item h6::after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 3px;
+	background: #f38181;
+	top: 10px;
+	left: -70px;
+}
+.carousel-control-prev-icon i{
+	color: #333333;
+}
+.carousel-control-next-icon i{
+	color: #333333;
+}
+
+.isStuck{
+    left: 0px;
+    width: 100%;
+    background: #333333;
+}
+.navbar-wrapper{
+    width: 80%;
+    margin-top: 0px;
+    position: relative;
+    z-index: 15;
+}
+/* =============================================
+			  End clients-section                 
+================================================= */
+
+
+/* =============================================
+			  Start meet-section                 
+================================================= */
+.meet-section{
+	width: 100%;
+}
+.meet-section .meet{
+	width: 100%;
+}
+.meet-section .meet .meet-title{
+	width: 100%;
+	text-align: center;
+}
+.meet-section .meet .meet-title h4{
+	font-size: 30px;
+	font-weight: 400;
+	color: #333333;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 70px;
+}
+.meet-section .meet .meet-title h3{
+	font-size: 40px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	position: relative;
+}
+.meet-section .meet .meet-title h3::after{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 3px;
+	background: #f38181;
+	top: 60px;
+	left: 515px;
+}
+.meet-section .meet .meet-title p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.meet-section .meet .meet-inner{
+	width: 33.33%;
+	float: left;
+	margin-bottom: 70px;
+}
+.meet-section .meet .meet-inner img{
+	width: 100%;
+}
+.meet-inner-extra{
+	position: relative;
+}
+.meet-section .meet .meet-inner-extra .hover-box{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #e9d282 0%,  #e37d7c);
+	top: 0px;
+	left: 0px;
+	transition: 0.4s linear;
+	text-align: center;
+	opacity: 0;
+}
+.meet-section .meet .meet-inner-extra .hover-box ul{
+	padding-left: 0;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.meet-section .meet .meet-inner-extra .hover-box:hover{
+	opacity: 0.8;
+}
+.meet-section .meet .meet-inner-extra .hover-box ul{}
+.meet-section .meet .meet-inner-extra .hover-box ul li{
+	display: inline;
+}
+.meet-section .meet .meet-inner-extra .hover-box ul li i{
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 20px;
+	color: #f38181;
+	background: #fce38a;
+	text-align: center;
+	margin-right: -3px;
+}
+.meet-section .meet .meet-inner-extra .hover-box ul li i:hover{
+	background: #fff;
+	color: #f38181;
+}
+.meet-section .meet .meet-inner-extra .hover-box h6{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: ;
+	color: #fff;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+.meet-section .meet .meet-inner h6{
+    font-size: 15px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	margin-top: 30px;
+	text-align: center;
+}
+.meet-section .meet .meet-inner p{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+	text-align: center;
+	margin-top: -10px;
+}
+/* =============================================
+			  End about-section                 
+================================================= */
+
+/* =============================================
+			  Start logos-section                 
+================================================= */
+.logos-section{
+	width: 100%;
+	background: #f8f8f8;
+	padding: 60px 0px;
+	text-align: center;
+}
+.logos-section img{
+	width: 80%;
+}
+/* =============================================
+			  Start logos-section                 
+================================================= */
+
+
+/* =============================================
+			  Start work-section                 
+================================================= */
+.work-section{
+	width: 100%;
+}
+.work-section .work{
+	width: 100%;
+}
+.work-section .work .work-title{
+	width: 100%;
+	text-align: center;
+}
+.work-section .work .work-title h4{
+	font-size: 30px;
+	font-weight: 400;
+	color: #333333;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 70px;
+}
+.work-section .work .work-title h3{
+	font-size: 40px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	position: relative;
+}
+.work-section .work .work-title h3::after{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 3px;
+	background: #f38181;
+	top: 60px;
+	left: 515px;
+}
+.work-section .work .work-title p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+/* =============================================
+			  End work-section                 
+================================================= */
+
+/* =============================================
+			  Start work-section                 
+================================================= */
+.protfolio-section{
+	width: 100%;
+}
+.protfolio-section .protfolio-1st{
+	width: 25%;
+	float: left;
+	background: red;
+	height: 400px;
+}
+.protfolio-section .protfolio-2nd{
+	width: 25%;
+	float: left;
+	background: blue;
+	height: 400px;
+}
+.protfolio-section .protfolio-3rd{
+	width: 25%;
+	float: left;
+	background: black;
+	height:400px;
+	position: relative;
+}
+.protfolio-section .protfolio-4th{
+	width: 25%;
+	float: left;
+	background: tomato;
+	height: 400px;
+}
+
+
+.protfolio-section .protfolio-1st-top{
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+
+.protfolio-section .protfolio-1st-bottom{
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+.protfolio-section .protfolio-1st-top img{
+	width: 100%;
+	height: 100%;
+}
+.protfolio-section .protfolio-1st-bottom img{
+	width: 100%;
+	height: 100%;
+}
+.protfolio-section .protfolio-3rd img{
+	width: 100%;
+	height: 100%;
+}
+
+.protfolio-section .protfolio-1st-top .hover-box, .protfolio-section .protfolio-1st-bottom .hover-box, .protfolio-section .protfolio-3rd .hover-box{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #e9d282 0%,  #e37d7c);
+	top: 0px;
+	left: 0px;
+	transition: 0.4s linear;
+	text-align: center;
+	opacity: 0;
+}
+.protfolio-section .protfolio-1st-top .hover-box:hover, .protfolio-section .protfolio-1st-bottom .hover-box:hover, .protfolio-section .protfolio-3rd .hover-box:hover{
+	opacity:0.8;
+}
+.protfolio-section .protfolio-1st-top .hover-box ul, .protfolio-section .protfolio-1st-bottom .hover-box ul, .protfolio-section .protfolio-3rd .hover-box ul{
+	padding-left: 0;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.protfolio-section .protfolio-1st-top .hover-box i, .protfolio-section .protfolio-1st-bottom .hover-box i, .protfolio-section .protfolio-3rd .hover-box i{
+	font-size: 20px;
+	color: #fff;
+}
+.protfolio-section .protfolio-1st-top .hover-box h6, .protfolio-section .protfolio-1st-bottom .hover-box h6, .protfolio-section .protfolio-3rd .hover-box h6{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: ;
+	color: #fff;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+.protfolio-section .protfolio-1st-top .hover-box p, .protfolio-section .protfolio-1st-bottom .hover-box p, .protfolio-section .protfolio-3rd .hover-box p{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: ;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-top: -5px;
+}
+
+/* =============================================
+			  End work-section                 
+================================================= */
+
+/* =============================================
+			  Start people-section                 
+================================================= */
+.people-section{
+	width: 100%;
+	background-image: url(../images/people-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.people-section .people{
+	width: 100%;
+}
+.people-section .people .people-title{
+	width: 100%;
+	text-align: center;
+}
+.people-section .people .people-title h4{
+	font-size: 30px;
+	font-weight: 400;
+	color: #333333;
+	font-family: 'Kaushan Script', cursive;
+	padding-top: 70px;
+}
+.people-section .people .people-title h3{
+	font-size: 40px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	position: relative;
+}
+.people-section .people .people-title h3::after{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 3px;
+	background: #f38181;
+	top: 60px;
+	left: 515px;
+}
+.people-inner-extra{
+	width: 80%;
+	margin: 0 auto;
+}
+.people-inner{
+	width: 50%;
+	float: left;
+	margin-top: 70px;
+}
+
+.people-inner img{
+	width: 25%;
+}
+.people-inner .media-body{
+	margin-left: 20px;
+}
+.people-inner h5{
+    font-size: 18px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+}
+.people-inner h6{
+    font-size: 15px;
+	font-weight: 400;
+	line-height: ;
+	color: #999999;
+	font-family: 'Montserrat-Bold';
+	position: relative;
+}
+.people-inner h6::after{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 3px;
+	background: #f38181;
+	top: 30px;
+	left: 0px;
+}
+.people-inner p{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+	margin-top: 30px;
+}
+/* =============================================
+			  End people-section                 
+================================================= */
+
+/* =============================================
+			  Start latest-section                 
+================================================= */
+.latest-section{
+	width: 100%;
+}
+.latest-section .latest{
+	width: 100%;
+}
+.latest-section .latest .latest-title{
+	width: 100%;
+	text-align: center;
+}
+.latest-section .latest .latest-title h4{
+	font-size: 30px;
+	font-weight: 400;
+	color: #333333;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 70px;
+}
+.latest-section .latest .latest-title h3{
+	font-size: 40px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	position: relative;
+}
+.latest-section .latest .latest-title h3::after{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 3px;
+	background: #f38181;
+	top: 60px;
+	left: 515px;
+}
+
+.latest-inner-extra{
+	width: 31%;
+	margin-right: 2.33%;
+	float: left;
+	position: relative;
+	margin-top: 50px;
+}
+.latest-p{
+	content: "";
+	position: absolute;
+	top: 32%;
+	left: -10px;
+	padding: 10px;
+	background: #95e1d3;
+	color: #fff;
+	text-align: center;
+}
+.latest-inner-extra img{
+	width:100%;
+}
+.latest-inner-extra h6{
+    font-size: 15px;
+	font-weight: 400;
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	position: relative;
+	margin-top: 20px;
+}
+.latest-inner-extra p{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+	margin-top: 10px;
+}
+.latest-icon{}
+.latest-icon ul {}
+.latest-inner-extra .latest-icon li{
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+.latest-inner-extra .latest-icon li i{
+	color: #95e1d3;
+}
+.latest-inner-extra .latest-icon li p{
+	font-size: 15px;
+	font-weight: 400;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+	margin-top: 10px;
+}
+.latest-details{
+	width: 100%;
+	border-bottom: 1px solid #999999;
+}
+/* =============================================
+			  End latest-section                 
+================================================= */
+.map{
+	width: 100%;
+	margin-top: 50px;
+}
+/* =============================================
+			  Start-footer-section                 
+================================================= */
+.footer-section{
+	width: 100%;
+	background: #f8f8f8;
+}
+.footer-section .footer{
+	width: 100%;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #999999;
+}
+.footer-section .footer .footer-left{
+	width: 40%;
+	float: left;
+}
+.footer-section .footer .footer-left img{
+	padding-top: 60px;
+}
+.footer-section .footer .footer-left p{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+	margin-top: 30px;
+}
+.footer-section .footer .footer-left h6{
+	font-size: 15px;
+	font-weight: 400
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	position: relative;
+}
+.footer-section .footer .footer-left h6::after{
+	content: "";
+	position: absolute;
+	width: 400px;
+	height: 2px;
+	background: #999999;
+	top: 35px;
+	left: 0;
+}
+.footer-section .footer .footer-left .footer-left-icon li{
+	font-size: 15px;
+	font-weight: 400
+	line-height: ;
+	color: #95e1d3;
+	font-family: 'Montserrat-Bold';
+	display: inline-block;
+	margin-right:5px;
+}
+.footer-section .footer .footer-left .footer-left-icon li:hover{
+	color: #333333;
+}
+.footer-section .footer .footer-left h6 span{
+	font-weight: 500;
+}
+
+.form-controll{
+	width: 100%;
+	padding: 5px 50px 5px 10px;
+	border: none;
+	background: #fff;
+}
+.footer-btn{
+    font-weight: 700;
+    text-transform: uppercase;
+	color: #fff;
+	background: #95e1d3;
+	border: none;
+	padding: 6px 30px;
+}
+.footer-btn:hover{
+	background: #333333;
+	color: #fff;
+}
+/* middle */
+.footer-section .footer .footer-middle{
+	width: 30%;
+	float: left;
+}
+.footer-section .footer .footer-middle h5{
+	font-size: 17px;
+	font-weight: 400
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	padding-top:60px;
+	padding-bottom:30px;
+}
+.footer-section .footer .footer-middle .media{
+	margin-top: 20px;
+}
+.footer-section .footer .footer-middle .media-body{
+	margin-top: 7px;
+	margin-left: 10px;
+}
+.footer-section .footer .footer-middle h6{
+	font-size: 14px;
+	font-weight: 400
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+}
+.footer-section .footer .footer-middle p{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #999999;
+	font-family: 'Montserrat-Regular';
+	margin-top: -10px;
+}
+.footer-section .footer .footer-right{
+	width: 30%;
+	float: left;
+}
+.footer-section .footer .footer-right h5{
+	font-size: 17px;
+	font-weight: 400
+	line-height: ;
+	color: #333333;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
+	padding-top:60px;
+	padding-bottom:30px;
+}
+.footer-right-img{
+	width: 32%;
+	float: left;
+	margin-right: 1.33%;
+	margin-bottom: 1.33%;
+}
+.footer-right-img img{
+	width: 100%;
+}
+
+.footer-p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #333;
+	font-family: 'Montserrat-Regular';
+	text-align: center;
+	padding: 30px 0px 20px;
+}
+.footer-p span{
+	color: red;
+}
+/* =============================================
+			  End-footer-section                 
+================================================= */
